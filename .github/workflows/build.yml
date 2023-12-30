@@ -25,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
       - name: Install dependencies
-        run: brew install openssl frei0r sdl2 wget
+        run: brew install openssl frei0r sdl2 wget nasm
       - name: Compile
         run: ./build.sh -j4
       - name: Upload Artifacts
